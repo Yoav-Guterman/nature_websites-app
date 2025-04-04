@@ -1,0 +1,15 @@
+<!-- list.component.html -->
+<select (change)="selectRegion($event)">
+    <option value="">Select a region</option>
+    @for (region of regions(); track region.id) {
+    <option [value]="region.id">{{region.name}} </option>
+    }
+</select>
+
+@for (website of websites(); track website.id) {
+<app-single [website]="website" (deletedWebsite)="removeWebsite($event)"></app-single>
+}
+
+@empty {
+<p>Please select a region to view websites</p>
+}
