@@ -2,10 +2,6 @@ import { NextFunction, Request, Response } from "express";
 import { WebsiteModel } from "../../models/website";
 import AppError from "../../errors/app-error";
 import { StatusCodes } from "http-status-codes";
-// import AppError from "../../errors/app-error";
-// import { StatusCodes } from "http-status-codes";
-// import { GameModel } from "../../models/game";
-// import { Category } from "../../enum/category.enum";
 
 export async function getAllWebsites(req: Request, res: Response, next: NextFunction) {
     try {

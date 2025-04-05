@@ -1,6 +1,8 @@
 {
-    "db": {
-        "host": "database"
+    "mongoose": {
+        "host": "database",
+        "port": 27017,
+        "database": "natureWebsites"
     },
     "io": {
         "url": "ws://io:3003"

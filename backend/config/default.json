@@ -1,7 +1,7 @@
 {
     "app": {
         "port": "3000",
-        "name": "twitter dev",
+        "name": "nature-websites",
         "secret": "MySecret",
         "jwtSecret": "myJwtSecret"
     },

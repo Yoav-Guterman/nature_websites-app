@@ -1,3 +1,5 @@
 export const environment = {
-    restServerUrl: 'http://mysite.com'
+    restServerUrl: 'http://localhost:3000'
 };
+
+// for the docker compose
