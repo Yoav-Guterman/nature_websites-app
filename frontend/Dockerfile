@@ -20,7 +20,8 @@ WORKDIR /app
 COPY ./package*.json ./
 RUN npm install
 COPY ./ ./
-RUN npm run build
+RUN npm run build -- --configuration docker
+# RUN npm run build
 
 
 FROM nginx:alpine
